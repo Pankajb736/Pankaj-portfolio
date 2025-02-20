@@ -2,13 +2,49 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #1e3c72, #2a5298);
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.left-column {
     text-align: center;
+    padding: 20px;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.right-column {
     padding: 20px;
 }
 
 h1 {
-    font-size: 36px;
-    animation: fadeIn 2s ease-in-out;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 5px;
+}
+
+p, ul {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 img {
@@ -17,17 +53,6 @@ img {
     height: 150px;
     border: 3px solid white;
     animation: zoomIn 1.5s ease-in-out;
-}
-
-h2 {
-    margin-top: 20px;
-    text-decoration: underline;
-    animation: slideIn 1.5s ease-in-out;
-}
-
-p, ul {
-    font-size: 18px;
-    animation: fadeIn 2s ease-in-out;
 }
 
 a {
@@ -44,11 +69,6 @@ a:hover {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-}
-
-@keyframes slideIn {
-    from { transform: translateX(-50px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
 }
 
 @keyframes zoomIn {
