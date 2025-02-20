@@ -4,86 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #1e3c72, #2a5298);
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 36px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            border: 3px solid white;
-            animation: zoomIn 1.5s ease-in-out;
-        }
-        h2 {
-            margin-top: 20px;
-            text-decoration: underline;
-            animation: slideIn 1.5s ease-in-out;
-        }
-        p, ul {
-            font-size: 18px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        a {
-            color: yellow;
-            font-weight: bold;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideIn {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes zoomIn {
-            from { transform: scale(0.8); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
-        }
-    </style>
+    
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Pankaj Vilas Bhave</h1>
-    <img src="profile.jpg" alt="Profile Image">
+    <header class="l-header" id="header"></header>
     
-    <h2>Profile</h2>
-    <p>Computer Science student.<br>
-       I consider myself a responsible and orderly person.<br>
-       I am looking forward to my first work experience.</p>
+    <main class="l-main bd-container">
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <section class="home" id="home">
+                    <h1>Pankaj Vilas Bhave</h1>
+                    <img src="profile.jpg" alt="Profile Image">
+                </section>
+                
+                <section class="social section">
+                    <h2>LinkedIn</h2>
+                    <p><a href="https://www.linkedin.com/in/pankajbhave-bab91b279" target="_blank">LinkedIn Profile</a></p>
+                </section>
+                
+                <section class="profile section" id="profile">
+                    <h2>Profile</h2>
+                    <p>Computer Science student.<br>
+                       I consider myself a responsible and orderly person.<br>
+                       I am looking forward to my first work experience.</p>
+                </section>
+                
+                <section class="education section" id="education">
+                    <h2>Education</h2>
+                    <p>Poornaprajna Institute of Management<br>
+                       Master of Computer Application (2024-2026)</p>
+                </section>
+                
+                <section class="skills section" id="skills">
+                    <h2>Skills</h2>
+                    <p>Time Management, Creativity, Work Ethic</p>
+                </section>
+            </div>
+
+            <div class="resume__right">
+                <section class="experience section" id="experience">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li><a href="https://github.com/Pankajb736/my-website" target="_blank">My Website</a></li>
+                        <li><a href="https://github.com/Pankajb736/Hotel-managementsystem" target="_blank">Hotel Management System</a></li>
+                    </ul>
+                </section>
+                
+                <section class="certificate section" id="certificates">
+                    <h2>Courses</h2>
+                    <p>SAP Basis</p>
+                </section>
+                
+                <section class="references section" id="references">
+                    <h2>Contact Me</h2>
+                    <p>Phone: 8792284547<br>
+                       Email: <a href="mailto:Pankajbh3437@gmail.com">Pankajbh3437@gmail.com</a><br>
+                       Address: Hosala Village, Barkur Post, Brahmavara Taluk</p>
+                </section>
+                
+                <section class="languages section">
+                    <h2>Languages</h2>
+                    <p>English, Kannada, Hindi</p>
+                </section>
+            </div>
+        </div>        
+    </main>
     
-    <h2>LinkedIn</h2>
-    <p><a href="https://www.linkedin.com/in/pankajbhave-bab91b279" target="_blank">LinkedIn Profile</a></p>
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
     
-    <h2>Contact Me</h2>
-    <p>Phone: 8792284547<br>
-       Email: <a href="mailto:Pankajbh3437@gmail.com">Pankajbh3437@gmail.com</a><br>
-       Address: Hosala Village, Barkur Post, Brahmavara Taluk</p>
-    
-    <h2>Courses</h2>
-    <p>SAP Basis</p>
-    
-    <h2>Education</h2>
-    <p>Poornaprajna Institute of Management<br>
-       Master of Computer Application (2024-2026)</p>
-    
-    <h2>Languages</h2>
-    <p>English, Kannada, Hindi</p>
-    
-    <h2>Skills</h2>
-    <p>Time Management, Creativity, Work Ethic</p>
-    
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="https://github.com/Pankajb736/my-website" target="_blank">My Website</a></li>
-        <li><a href="https://github.com/Pankajb736/Hotel-managementsystem" target="_blank">Hotel Management System</a></li>
-    </ul>
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
