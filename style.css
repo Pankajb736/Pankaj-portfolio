@@ -32,13 +32,11 @@ header, main, footer {
 header {
   padding: 2em;
   text-align: center;
-  background-image: url('./img/download.png'); /* Ensure the path is correct */
+  background-image: url('./img/bg.jpg');
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: fixed;
   color: white;
 }
-
 
 header section {
   margin: 0 auto;
